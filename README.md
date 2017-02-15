@@ -1,19 +1,22 @@
 # Sandbox
 <!doctype html>
 <html>
-<head>  <title>math sandbox code example</title>  
-<script>     //Sandboxing Math functions    
-//Sandboxing square root    
+<head>  <title>loops sandbox code example</title>  
+<script>     //Sandboxing loops    
+//Sandboxing loops    
 //Happy path - loop    
-var pill;  
-for (pill=1; pill < 5; pill++;)    
-console.log(pill)    
-//Result -  writen to the console
+var coin;  
+for (coin=1; coin < 5; coin++;){    
+console.log(coin)
+}
+//Result - writen to the console
 
 //Nasty path - negative number    
-root = Math.sqrt(-10)    
-console.log(root)    
-//Result - NaN (Not a Number) written to console    
+var coin;
+for (coin=1; coin < 5; coin+1;){
+console.log(coin)
+}
+//Result - loop will not loop    
 
 //Nasty path - string    
 root = Math.sqrt("hello")    
@@ -58,4 +61,4 @@ console.log(absValue)    
 
   <style>
   </style></head>
-<body> <p>Open the console of your browser to see the results.</p></body></html>
+<body> <p></p></body></html>
