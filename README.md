@@ -1,7 +1,8 @@
 # Sandbox
 <!doctype html>
 <html>
-<head>  <title>loops sandbox code example</title>  
+<head>  <title>loops, conditional statements, functions, variables, paramaters, arrays, associative arrays 
+<br> sandbox code example</title>  
 <script>     //Sandboxing loops    
 //Sandboxing loops    
 //Happy path - loop    
@@ -11,22 +12,26 @@ console.log(coin)
 }
 //Result - writen to the console
 
-//Nasty path - negative number    
+//Nasty path - bad syntax    
 var coin;
 for (coin=1; coin < 5; coin+1;){
 console.log(coin)
 }
 //Result - loop will not loop    
 
-//Nasty path - string    
-root = Math.sqrt("hello")    
-console.log(root)    
-//Result - NaN written to console
+//Nasty path - missing braces    
+var coin;    
+for (coin=1; coin < 5; coin++;)
+console.log(coin)
+//Result - loop will not work
 
-//Nasty path - empty string    
-root = Math.sqrt("")    
-console.log(root)    
-//Result - 0 written to console    
+//Happy path - do...while    
+var weekdays = 0;
+do {
+  weekdays += 1;
+  console.log(weekdays);
+  } while (weekdays < 5);
+//Result - loop will run five times  
 
 //Nasty path - null    
 root = Math.sqrt(null)    
