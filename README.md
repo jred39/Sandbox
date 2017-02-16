@@ -1,8 +1,7 @@
 # Sandbox
 <!doctype html>
 <html>
-<head>  <title>loops, conditional statements, functions, variables, paramaters, arrays, associative arrays 
-<br> sandbox code example</title>  
+<head>  <title>loops, conditional statements, functions, variables, paramaters, arrays, associative arrays sandbox code example</title>  
 <script>     //Sandboxing loops    
 //Sandboxing loops    
 //Happy path - loop    
@@ -33,10 +32,12 @@ do {
   } while (weekdays < 5);
 //Result - loop will run five times  
 
-//Nasty path - null    
-root = Math.sqrt(null)    
-console.log(root)    
-//Result - 0 written to console
+//Happy path - for loop with array    
+var numNums = [6, 4, 3, 0, 8, 2]    
+for (var i = 0; i < 6; i++;){
+
+}
+//Result - loop will run through the numbers in the array
 
 //Sandboxing absolute value    
 //Happy path - absolute value of a negative number    
