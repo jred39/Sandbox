@@ -1,8 +1,9 @@
 # Sandbox
 <!doctype html>
 <html>
-<head>  <title>loops, conditional statements, functions, variables, paramaters, arrays, associative arrays sandbox code example</title>  
-<script>     //Sandboxing loops    
+<head>  <title>loops, conditional statements, functions, variables, paramaters, arrays sandbox code example</title>  
+<script>
+
 //Sandboxing loops    
 //Happy path - loop    
 var coin;  
@@ -33,38 +34,20 @@ do {
 //Result - loop will run five times  
 
 //Happy path - for loop with array    
-var numNums = [6, 4, 3, 0, 8, 2]    
+var numNums = [6, 4, 3, 0, 8, 2];    
 for (var i = 0; i < 6; i++;){
 
 }
 //Result - loop will run through the numbers in the array
 
-//Sandboxing absolute value    
-//Happy path - absolute value of a negative number    
-var absValue = Math.abs(-100)    
-console.log(absValue)    
-//Result - 100 written to console    
+//Nasty path - using wrong index in an array
+var nums = [98, 7, 34, 5, 7];
+var firstArrayNum = nums[1];
+//Result - firstArrayNum contains the number 7 instead of 98
 
-//Nasty path - positive value    
-absValue = Math.abs(21)    
-console.log(absValue)    
-//Result - 21 written to console    
-
-//Nasty path - string    
-absValue = Math.abs("hello")    
-console.log(absValue)    
-//Result - NaN written to console    
-
-//Nasty path - empty string    
-absValue = Math.abs("")    
-console.log(absValue)    
-//Result - 0 written to console    
-
-//Nasty path - null    
-absValue = Math.abs(null)    
-console.log(absValue)    
-//Result - 0 written to console  </script>
+  </script>
 
   <style>
-  </style></head>
+  </style>
+  </head>
 <body> <p></p></body></html>
